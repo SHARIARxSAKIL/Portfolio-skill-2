@@ -1,0 +1,30 @@
+.cv-container {
+  padding: 40px 0;
+}
+
+.cv-viewer {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.cv-download-btn {
+  text-align: center;
+}
+
+.cv-download-btn a:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .cv-viewer {
+    height: auto;
+  }
+  
+  .cv-viewer iframe {
+    height: 600px !important;
+  }
+}
