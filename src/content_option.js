@@ -19,11 +19,12 @@ const introdata = {
 
 const dataabout = {
     title: "About my self",
-    aboutme: `I'm Shariar Sakil, a passionate Applied Computer Science student based in Belgium with a strong drive for web development and creating impactful digital solutions. My journey in tech began with a fascination for how software shapes our daily lives, which led me to pursue Applied Computer Science & Electronics-ICT. I chose this program because it combines practical software development with electronics and IoT, allowing me to build end-to-end solutions that matter in the real world.
-
-Beyond coding, I'm an adventurer at heart—I explore new destinations, capture moments through video production, and contribute to documentaries. These hobbies fuel my creativity and help me approach problems from different perspectives. I believe in continuous learning and solving real-world problems through technology.
-
-My professional ambitions include becoming a full-stack developer and architect for IoT solutions that address agricultural and environmental challenges. I want to leverage my skills to build sustainable technology that positively impacts communities. Let's collaborate and build something amazing together!`,
+    aboutme: `I'm Shariar Sakil, an Applied Computer Science student at Thomas More, Belgium, passionate about web development, IoT, and building real-world digital solutions. 
+    My tech journey started in childhood with video games and movies—especially Mr. Robot—which sparked my enthusiasm for computer science. 
+    I chose this program because it blends software development with electronics and IoT. Beyond coding, I'm an adventurer at heart: I explore new places, do video production, and contribute to documentaries. 
+    These hobbies keep me creative and help me solve problems from fresh angles. 
+    My goals are to become a full-stack developer and IoT architect focused on agriculture and environmental sustainability, then start my own tech consultancy. 
+    Let's build something amazing together.`,
 };
 const worktimeline = [{
         jobtitle: "Frontend Developer",
