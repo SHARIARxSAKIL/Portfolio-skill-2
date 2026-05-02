@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataprojects, meta } from "../../content_option";
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   return (
@@ -23,10 +24,10 @@ export const Projects = () => {
           {dataprojects.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img src={data.img} alt={data.name} />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <Link to={`/project/${data.id}`}>view project</Link>
                 </div>
               </div>
             );

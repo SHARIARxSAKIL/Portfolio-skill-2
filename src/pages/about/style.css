@@ -106,6 +106,30 @@
     padding-bottom: 4px;
 }
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(13, 71, 161, 0.1);
+    border: 1px solid #0d47a1;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(13, 71, 161, 0.2);
+    transform: translateY(-2px);
+}
+
 
 /*! CSS Used keyframes */
 

@@ -44,7 +44,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -68,50 +68,30 @@ export const About = () => {
           </Col>
           <Col lg="7">
             <h4 className="mb-4" style={{color: "#0d47a1"}}>Technical Skills</h4>
-            {skills.filter(skill => skill.category === "Technical").map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            <div className="skills-container">
+              {skills.filter(skill => skill.category === "Technical").map((data, i) => {
+                return (
+                  <span key={i} className="skill-tag">{data.name}</span>
+                );
+              })}
+            </div>
             <h4 className="mb-4 mt-5" style={{color: "#0d47a1"}}>Soft Skills</h4>
-            {skills.filter(skill => skill.category === "Soft").map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            <div className="skills-container">
+              {skills.filter(skill => skill.category === "Soft").map((data, i) => {
+                return (
+                  <span key={i} className="skill-tag">{data.name}</span>
+                );
+              })}
+            </div>
           </Col>
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">CV & Downloads</h3>
+            <h3 className="color_sec py-4">CV</h3>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p className="mb-3">View and download my comprehensive CV to learn more about my experience, projects, and qualifications.</p>
+              <p className="mb-3"> View or download my CV to understand more about my experience, projects, and qualifications.</p>
               <Link to="/cv" className="btn btn-primary" style={{
                 padding: "10px 20px",
                 backgroundColor: "#0d47a1",
@@ -127,7 +107,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Things I Can Offer</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
