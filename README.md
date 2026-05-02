@@ -2,7 +2,7 @@
 
 My personal portfolio website showcasing my projects, skills, and journey as an Applied Computer Science student at Thomas More, Belgium.
 
-🔗 **Live Website**: [sakil.sinners.be](https://sakil.sinners.be)
+🔗 **Live Website**: [shariar-sakil-portfolio.netlify.app/](https://shariar-sakil-portfolio.netlify.app/)
 
 ---
 
@@ -44,10 +44,13 @@ Applied Computer Science student at Thomas More, Belgium
 
 ---
 
-*Last updated: April 2026*
 
+You can ignore this part 
 # Install dependencies
 yarn install
 
 # Start the development server
 yarn start
+
+
+*Last updated: April 2026*
