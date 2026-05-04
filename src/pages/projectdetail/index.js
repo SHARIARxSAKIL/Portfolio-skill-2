@@ -7,7 +7,7 @@ import { useParams, Link } from "react-router-dom";
 
 export const ProjectDetail = () => {
   const { id } = useParams();
-  const project = dataprojects.find(p => p.id === parseInt(id));
+  const project = dataprojects.find((p) => p.id === parseInt(id));
 
   if (!project) {
     return (
@@ -39,16 +39,14 @@ export const ProjectDetail = () => {
           <meta name="description" content={project.overview} />
         </Helmet>
 
-        {/* Back Button */}
         <Row className="mb-3 mt-3 pt-md-3">
           <Col lg="12">
             <Link to="/projects" className="btn-back">
-              ← Back to Projects
+              Back to Projects
             </Link>
           </Col>
         </Row>
 
-        {/* Project Title */}
         <Row className="mb-5">
           <Col lg="12">
             <h1 className="display-4 mb-4">{project.name}</h1>
@@ -56,7 +54,6 @@ export const ProjectDetail = () => {
           </Col>
         </Row>
 
-        {/* Project Image */}
         <Row className="mb-5">
           <Col lg="12" className="text-center">
             <img
@@ -67,7 +64,6 @@ export const ProjectDetail = () => {
           </Col>
         </Row>
 
-        {/* Overview Section */}
         <Row className="sec_sp">
           <Col lg="4">
             <h3 className="color_sec">Project Overview</h3>
@@ -77,7 +73,6 @@ export const ProjectDetail = () => {
           </Col>
         </Row>
 
-        {/* My Role & Contributions */}
         <Row className="sec_sp">
           <Col lg="4">
             <h3 className="color_sec">{project.partIDidTitle}</h3>
@@ -91,7 +86,6 @@ export const ProjectDetail = () => {
           </Col>
         </Row>
 
-        {/* Dashboards Section */}
         <Row className="sec_sp">
           <Col lg="4">
             <h3 className="color_sec">Dashboards</h3>
@@ -113,28 +107,22 @@ export const ProjectDetail = () => {
           </Col>
         </Row>
 
-        {/* What I Learned */}
         <Row className="sec_sp">
           <Col lg="4">
             <h3 className="color_sec">What I Learned</h3>
           </Col>
           <Col lg="8">
-            <ul className="learning-list">
-              {project.whatILearned.map((learning, index) => (
-                <li key={index}>{learning}</li>
-              ))}
-            </ul>
+            <p className="learning-text">{project.whatILearned}</p>
           </Col>
         </Row>
 
-        {/* Links */}
         <Row className="sec_sp mb-5">
           <Col lg="4">
             <h3 className="color_sec">Links</h3>
           </Col>
           <Col lg="8">
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn-project-link">
-              View Project →
+              View Project
             </a>
           </Col>
         </Row>

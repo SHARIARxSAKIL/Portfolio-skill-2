@@ -27,7 +27,8 @@
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
-.project-overview {
+.project-overview,
+.learning-text {
   font-size: 16px;
   line-height: 1.8;
   color: var(--text-color);
@@ -43,15 +44,13 @@
   padding-left: 15px;
 }
 
-.contribution-list,
-.learning-list {
+.contribution-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.contribution-list li,
-.learning-list li {
+.contribution-list li {
   padding: 12px 0;
   padding-left: 30px;
   position: relative;
@@ -61,18 +60,18 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.contribution-list li:before,
-.learning-list li:before {
-  content: "✓";
+.contribution-list li:before {
+  content: "";
   position: absolute;
   left: 0;
-  color: #0d47a1;
-  font-weight: bold;
-  font-size: 18px;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0d47a1;
 }
 
-.contribution-list li:last-child,
-.learning-list li:last-child {
+.contribution-list li:last-child {
   border-bottom: none;
 }
 
@@ -83,7 +82,7 @@
 }
 
 .dashboard-item {
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
